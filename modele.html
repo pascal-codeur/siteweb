@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<!--
+	Iridium by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head> lang="fr"
+		<title>www.groupe 71 d'html</title>
+		<meta charset="utf-8" lang="fr" charset="charset=ISO-10646" charset="windows-1252">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="ce site web est un test pour l'apprentit codeur que je suis suis pour pouvoir mieux faire à l'avenir" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<style>
+	/* For demo purpose only */
+
+	/*
+	GREEN
+	8dc63f
+	RED
+	FA5555
+	TURQUOISE
+	27E1CE
+	BLUE 
+	2772DB
+	ORANGE
+	FF7844
+	YELLOW
+	FCDA05
+	PINK
+	F64662
+	PURPLE
+	7045FF
+
+	*/
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations ul {
+		margin-bottom: 20px;
+		float: left;	
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+
+
+
+	#colour-variations li a[data-theme="style"] {
+		background: #8dc63f;
+	}
+	#colour-variations li a[data-theme="red"] {
+		background: #FA5555;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #27E1CE;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2772DB;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #FF7844;
+	}
+	#colour-variations li a[data-theme="yellow"] {
+		background: #FCDA05;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #F64662;
+	}
+	#colour-variations li a[data-theme="purple"] {
+		background: #7045FF;
+	}
+
+	#colour-variations a[data-layout="boxed"],
+	#colour-variations a[data-layout="wide"] {
+		padding: 2px 0;
+		width: 48%;
+		border: 1px solid #ededed;
+		text-align: center;
+		color: #777;
+		display: block;
+	}
+	#colour-variations a[data-layout="boxed"]:hover,
+	#colour-variations a[data-layout="wide"]:hover {
+		border: 1px solid #777;
+	}
+	#colour-variations a[data-layout="boxed"] {
+		float: left;
+	}
+	#colour-variations a[data-layout="wide"] {
+		float: right;
+	}
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #8dc63f;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+#menu {
+height:70px;
+}
+#menu ul {
+margin:0;
+padding:0;
+list-style-type:none;
+text-align:center;
+}
+#menu li {
+float:left;
+margin:auto;
+padding:0;
+background-color: #ff7859;
+border: 1px solid transparent;
+border-radius: 2px;
+margin: 5px;
+}
+#menu li:hover{
+margin: 0px;
+position: none;
+}
+#menu li a {
+display:block;
+width:all;
+color: black;
+text-decoration:none;
+padding:5px;
+background: transparent;
+height: 50px;
+width: 200px;
+line-height: 40px;
+font-family: monospace;
+font-size: 20px;
+}
+#menu li a:hover {
+color: black;
+transition: 0.7s;
+margin: -5px;
+}
+#menu ul li ul {
+display:none;
+}
+#menu ul li:hover ul {
+display:block;
+}
+#menu li:hover ul li {
+float:none;
+background: #10dbea;
+}
+#menu li ul {
+position:absolute;
+}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">Iridium</a></h1>
+					<span>Design by TEMPLATED</span>
+				</div><<br>
+				<!--notre menu stylisé-->
+				<div id="menu">
+					<ul>
+  						<li><a href="index.html">Home page</a></li>
+  						<li><a href="left-sidebar.html">Manage</a>
+    				<ul>
+      				<li><a href="left-sidebar.html">Extra plus</a></li>
+      				<li><a href="#">Extra one</a></li>
+      				<li><a href="#">Extra only</a></li>
+	 				</ul>
+  					</li>
+  					<li><a href="right-sidebar.html">Decouverte</a></li>
+
+  					<li><a href="no-sidebar.html">A propos</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2>Welcome to Iridium!</h2>
+								<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+							</header>
+							<a href="#" class="image full"><img src="images/pic07.jpg" alt="" /></a>
+							<p>This is <strong>Iridium</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
+							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor.</p>
+						</section>
+					</div>
+					
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<header>
+								<h2>Pellentesque vulputate</h2>
+							</header>
+							<ul class="style">
+								<li>
+									<p class="posted">August 11, 2002  |  (10 )  Comments</p>
+									<img src="images/pic04.jpg" alt="" />
+									<p class="text">Nullam non wisi a sem eleifend. Donec mattis libero eget urna. Pellentesque viverra enim.</p>
+								</li>
+								<li>
+									<p class="posted">August 11, 2002  |  (10 )  Comments</p>
+									<img src="images/pic05.jpg" alt="" />
+									<p class="text">Nullam non wisi a sem eleifend. Donec mattis libero eget urna. Pellentesque viverra enim.</p>
+								</li>
+								<li>
+									<p class="posted">August 11, 2002  |  (10 )  Comments</p>
+									<img src="images/pic06.jpg" alt="" />
+									<p class="text">Nullam non wisi a sem eleifend. Donec mattis libero eget urna. Pellentesque viverra enim.</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="featured">
+			<div class="container">
+				<div class="row">
+					<div class="4u">
+						<h2>Aenean elementum facilisis</h2>
+						<a href="#" class="image full"><img src="images/pic01.jpg" alt="" /></a>
+						<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum. Pellentesque viverra vulputate enim.</p>
+						<p><a href="#" class="button">More Details</a></p>
+					</div>
+					<div class="4u">
+						<h2>Fusce ultrices fringilla</h2>
+						<a href="#" class="image full"><img src="images/pic02.jpg" alt="" /></a>
+						<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum. Pellentesque viverra vulputate enim.</p>
+						<p><a href="#" class="button">More Details</a></p>
+					</div>
+					<div class="4u">
+						<h2>Etiam rhoncus volutpat erat</h2>
+						<a href="#" class="image full"><img src="images/pic03.jpg" alt="" /></a>
+						<p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum. Pellentesque viverra vulputate enim.</p>
+						<p><a href="#" class="button">More Details</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="4u">
+						<section>
+							<h2>Latest Posts</h2>
+							<ul class="default">
+								<li><a href="#">Pellentesque lectus gravida blandit</a></li>
+								<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
+								<li><a href="#">Phasellus nibh pellentesque congue</a></li>
+								<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
+								<li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="4u">
+						<section>
+							<h2>Ultrices fringilla</h2>
+							<ul class="default">
+								<li><a href="#">Pellentesque lectus gravida blandit</a></li>
+								<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
+								<li><a href="#">Phasellus nibh pellentesque congue</a></li>
+								<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
+								<li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="4u">
+						<section>
+							<h2>Aenean elementum</h2>
+							<ul class="default">
+								<li><a href="#">Pellentesque lectus gravida blandit</a></li>
+								<li><a href="#">Lorem ipsum consectetuer adipiscing</a></li>
+								<li><a href="#">Phasellus nibh pellentesque congue</a></li>
+								<li><a href="#">Cras vitae metus aliquam pharetra</a></li>
+								<li><a href="#">Maecenas vitae orci feugiat eleifend</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			</div>
+		</div>
+		
+	</body>
+</html>
